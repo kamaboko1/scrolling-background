@@ -1,0 +1,45 @@
+
+html{
+    h1, h2, h3, h4 {
+        font-family: $ff-ss;
+    }
+    p {
+        font-family: $ff-s;
+    }
+}
+
+body {
+    background: transparent;
+    background-image: url('/img/pic1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    -webkit-transition: background-image ease-in-out .4s;
+    -o-transition: background-image ease-in-out .4s;
+    transition: background-image ease-in-out .4s;
+}
+
+.sec {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.secBox1, .secBox2, .secBox3, .secBox4, .secBox5 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1em;
+    color: white;
+}
+
