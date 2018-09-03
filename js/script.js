@@ -1,15 +1,15 @@
 
-
-
-
-function yHandler() {
-
+function picLoad() {
+    
     var img2 = new Image();
         img2.onload = function() {
         document.getElementsByTagName('body').style.backgroundImage = "url('img/pic2.jpg')";
        };
-       img2.src = "url('img/pic2.jpg')";
+        img2.src = "url('img/pic2.jpg')";
 
+}
+
+function yHandler() {
 
     // set offSetY to capture Y measurement
     let offSetY = window.pageYOffset.toFixed(0);
@@ -55,9 +55,9 @@ function yHandler() {
     // }
 }
 
+
+window.onload = picLoad;
 window.onscroll = yHandler;
-
-
 
 document.body.style.backgroundImage = "url('img/pic1.jpg')";
 
