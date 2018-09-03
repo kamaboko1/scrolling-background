@@ -72,6 +72,11 @@ img4.onload = function() {
 };
 img4.src = "url('img/pic4.jpg')";
 
+var img5 = new Image();
+img5.onload = function() {
+    document.getElementsByTagName('body').style.backgroundImage = "url('img/pic5.jpg')";
+};
+img5.src = "url('img/pic5.jpg')";
 
 
 
