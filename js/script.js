@@ -1,4 +1,6 @@
 
+
+
 function yHandler() {
 
     // set offSetY to capture Y measurement
@@ -47,6 +49,25 @@ function yHandler() {
 
 window.onscroll = yHandler;
 document.body.style.backgroundImage = "url('img/pic1.jpg')";
+
+var img2 = new Image();
+    img2.onload = function() {
+        document.getElementsByTagName('body').style.backgroundImage = "url('img/pic2.jpg')";
+    };
+img2.src = "url('img/pic2.jpg')";
+
+var img3 = new Image();
+    img3.onload = function() {
+        document.getElementsByTagName('body').style.backgroundImage = "url('img/pic3.jpg')";
+    };
+img3.src = "url('img/pic2.jpg')";
+
+var img4 = new Image();
+    img4.onload = function() {
+        document.getElementsByTagName('body').style.backgroundImage = "url('img/pic4.jpg')";
+    };
+img4.src = "url('img/pic2.jpg')";
+
 
 
 
