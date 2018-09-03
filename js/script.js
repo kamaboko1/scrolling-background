@@ -1,14 +1,3 @@
-
-function picLoad() {
-    
-    var img2 = new Image();
-        img2.onload = function() {
-        document.getElementsByTagName('body').style.backgroundImage = "url('img/pic2.jpg')";
-       };
-        img2.src = "url('img/pic2.jpg')";
-
-}
-
 function yHandler() {
 
     // set offSetY to capture Y measurement
@@ -39,7 +28,7 @@ function yHandler() {
         document.body.style.backgroundImage = "url('img/pic1.jpg')";
     }
     if(offSetY >= sec1_beginning && offSetY <= sec1_end){
-        document.body.style.backgroundImage = "url('img/pic2.jpg')";
+        document.body.style.backgroundImage = img2;
     }
     if(offSetY >= sec2_beginning && offSetY <= sec2_end){
         document.body.style.backgroundImage = "url('img/pic3.jpg')";
@@ -55,11 +44,15 @@ function yHandler() {
     // }
 }
 
-
-window.onload = picLoad;
 window.onscroll = yHandler;
 
 document.body.style.backgroundImage = "url('img/pic1.jpg')";
+
+   var img2 = new Image();
+      img2.onload = function() {
+      document.getElementsByTagName('body').style.backgroundImage = "url('img/pic2.jpg')";
+    };
+    img2 = "url('img/pic2.jpg')";
 
 
 
