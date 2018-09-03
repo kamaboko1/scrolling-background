@@ -4,6 +4,13 @@
 
 function yHandler() {
 
+    var img2 = new Image();
+        img2.onload = function() {
+        document.getElementsByTagName('body').style.backgroundImage = "url('img/pic2.jpg')";
+       };
+       img2.src = "url('img/pic2.jpg')";
+
+
     // set offSetY to capture Y measurement
     let offSetY = window.pageYOffset.toFixed(0);
 
@@ -54,29 +61,8 @@ window.onscroll = yHandler;
 
 document.body.style.backgroundImage = "url('img/pic1.jpg')";
 
-var img2 = new Image();
-img2.onload = function() {
-    document.getElementsByTagName('body').style.backgroundImage = "url('img/pic2.jpg')";
-};
-img2.src = "url('img/pic2.jpg')";
 
-var img3 = new Image();
-img3.onload = function() {
-    document.getElementsByTagName('body').style.backgroundImage = "url('img/pic3.jpg')";
-};
-img3.src = "url('img/pic3.jpg')";
 
-var img4 = new Image();
-img4.onload = function() {
-    document.getElementsByTagName('body').style.backgroundImage = "url('img/pic4.jpg')";
-};
-img4.src = "url('img/pic4.jpg')";
-
-var img5 = new Image();
-img5.onload = function() {
-    document.getElementsByTagName('body').style.backgroundImage = "url('img/pic5.jpg')";
-};
-img5.src = "url('img/pic5.jpg')";
 
 
 
